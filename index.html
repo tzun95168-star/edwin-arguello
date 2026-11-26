@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edwin David Argüello Martínez — Desarrollador Full-Stack</title>
+  <meta name="description" content="Portafolio profesional de Edwin David Argüello Martínez, Desarrollador Full-Stack (Laravel, Vue 3, Flutter, MySQL) y Tecnólogo en Análisis y Desarrollo de Software (SENA)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-dot"></span>
+        <span>Edwin<span style="color:var(--accent)">.dev</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#proyecto">Proyecto en Curso</a></li>
+        <li><a href="#habilidades">Lenguajes &amp; Stack</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="./assets/Hoja_de_Vida_Edwin_David_Arguello_Martinez.pdf" target="_blank" class="btn btn-primary btn-sm">
+          Hoja de Vida
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="status-pill">
+          <span class="pulse-dot"></span>
+          <span>Desarrollador de Software · Web, APIs y Aplicaciones Móviles</span>
+        </div>
+
+        <h1>
+          Construyo ecosistemas <span>Full-Stack</span> completos: Web, APIs y Móvil.
+        </h1>
+
+        <p class="hero-lead">
+          Soy <strong>Edwin David Argüello Martínez</strong>, Desarrollador Full-Stack titulado como <strong>Técnico en Programación de Software</strong> y próximo a culminar la etapa lectiva del <strong>Tecnólogo en Análisis y Desarrollo de Software (SENA)</strong>. Actualmente estoy desarrollando <strong>Fashion Style</strong> de punta a punta con PHP/Laravel, JavaScript/Vue 3, Dart/Flutter y SQL (MySQL y PostgreSQL).
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#proyecto" class="btn btn-primary">Ver Proyecto en Desarrollo</a>
+          <a href="https://wa.me/573232242435?text=Hola%20Edwin%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo." target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Enviar un mensaje</a>
+          <a href="./assets/Hoja_de_Vida_Edwin_David_Arguello_Martinez.pdf" target="_blank" class="btn btn-secondary">Hoja de Vida (PDF)</a>
+          <a href="./assets/Hoja_de_Vida_Edwin_David_Arguello_Martinez.docx" download class="btn btn-secondary">Hoja de Vida (.docx)</a>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <div class="stat-value">En curso</div>
+            <div class="stat-label">Proyecto integral activo (Web, API y Android)</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">6 + 3</div>
+            <div class="stat-label">Lenguajes trabajados (6) y vistos en formación (3)</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">38</div>
+            <div class="stat-label">Tablas normalizadas en MySQL 8.0</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">77</div>
+            <div class="stat-label">Requerimientos IEEE 830 en el alcance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="profile-avatar-wrap">
+            <img src="./assets/img/perfil.jpg" alt="Edwin David Argüello Martínez" />
+          </div>
+          <h2>Edwin David Argüello M.</h2>
+          <div class="role-sub">Desarrollador Full-Stack</div>
+          <div class="profile-meta">Bucaramanga / Girón, Santander · Colombia</div>
+          <div class="profile-chips">
+            <span class="chip">PHP · Laravel</span>
+            <span class="chip">JS · Vue 3</span>
+            <span class="chip">Dart · Flutter</span>
+            <span class="chip">MySQL · PostgreSQL</span>
+            <span class="chip">Tailwind · Bootstrap</span>
+            <span class="chip">Git · Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURED PROJECT -->
+  <section id="proyecto" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="project-status-row">
+          <div class="section-kicker" style="margin-bottom:0">Proyecto Actual · Arquitectura Full-Stack</div>
+          <span class="live-dev-badge">
+            <span class="live-dev-dot"></span>
+            En desarrollo activo · 2026 – Actualidad
+          </span>
+        </div>
+        <h2 class="section-title">Fashion Style — Ecosistema Omnicanal E-Commerce, POS, Producción &amp; Móvil</h2>
+        <p class="section-desc">
+          Proyecto integral de software en el que <strong>estoy trabajando actualmente</strong> para gestionar la operación de una empresa de confección y tienda de ropa: escaparate virtual, punto de venta físico (POS), producción por lista de materiales (BOM), inventario/kárdex, facturación, pagos con Wompi y aplicación móvil Android conectados en tiempo real.
+        </p>
+      </div>
+
+      <!-- Architecture Tabs -->
+      <div class="project-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="web">1. Tienda &amp; Panel Web (Vue 3)</button>
+        <button class="tab-btn" data-tab="backend">2. Backend API &amp; Tiempo Real (Laravel)</button>
+        <button class="tab-btn" data-tab="mobile">3. App Móvil Android (Flutter)</button>
+        <button class="tab-btn" data-tab="engineering">4. Base de Datos &amp; Ingeniería</button>
+      </div>
+
+      <!-- Tab 1: Web -->
+      <div class="tab-panel active" id="tab-web">
+        <div class="panel-content">
+          <h3>Frontend Reactivo en Vue 3 + Vite + Tailwind CSS</h3>
+          <p>
+            Interfaz web en construcción e iteración continua con doble entorno: escaparate e-commerce para clientes y panel administrativo con control de acceso por roles (Administrador, Empleado, Cliente).
+          </p>
+          <ul class="feature-list">
+            <li><strong>E-Commerce funcional:</strong> Catálogo con filtros, variantes por talla/color, favoritos, reseñas, carrito persistente (Pinia) y autocompletado geográfico de municipios de Colombia.</li>
+            <li><strong>Dashboard &amp; Analítica:</strong> KPIs en tiempo real, gráficas de ventas (POS vs Online), control de gastos y medios de pago con Chart.js + exportación a Excel y PDF.</li>
+            <li><strong>POS Físico &amp; Producción Textil:</strong> Venta rápida en mostrador con cálculo de cambio y calculadora de órdenes de producción y costeo por lote (BOM).</li>
+            <li><strong>Tiempo Real sin Recarga:</strong> Cliente Laravel Echo + composable <code>useRecargaAutomatica</code> para refrescar vistas automáticamente ante pedidos o pagos.</li>
+          </ul>
+          <div class="panel-tags">
+            <span class="tech-pill">Vue 3</span>
+            <span class="tech-pill">JavaScript ES6+</span>
+            <span class="tech-pill">Vite</span>
+            <span class="tech-pill">Pinia</span>
+            <span class="tech-pill">Tailwind CSS</span>
+            <span class="tech-pill">Bootstrap</span>
+            <span class="tech-pill">Axios</span>
+            <span class="tech-pill">Chart.js</span>
+          </div>
+        </div>
+        <div class="panel-preview" data-lightbox="./assets/img/fs_dashboard.png" data-caption="Panel Administrativo Fashion Style (en desarrollo activo) — KPIs en vivo, ventas POS/Web y exportación Excel/PDF">
+          <img src="./assets/img/fs_dashboard.png" alt="Dashboard administrativo Fashion Style" />
+          <div class="panel-preview-caption">Clic para ampliar · Dashboard Administrativo (Vue 3 + Chart.js)</div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Backend -->
+      <div class="tab-panel" id="tab-backend">
+        <div class="panel-content">
+          <h3>API REST en Laravel 12/13 + WebSockets + Wompi</h3>
+          <p>
+            Núcleo transaccional en PHP 8.3 en el que trabajo sobre arquitectura de servicios, seguridad basada en roles y sincronización bidireccional en tiempo real.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Seguridad y Autenticación:</strong> Laravel Sanctum, inicio de sesión con Google OAuth 2.0, verificación 2FA por OTP de 6 dígitos y permisos granulares con Spatie RBAC.</li>
+            <li><strong>Pasarela Wompi Bancolombia:</strong> Integración de pagos con PSE, Nequi, DaviPlata, tarjetas y webhooks con envío y descarga de factura.</li>
+            <li><strong>Reserva Transaccional de Stock:</strong> Bloqueo temporal de inventario en checkout con expiración y liberación automatizada.</li>
+            <li><strong>Laravel Reverb &amp; Contenedores:</strong> Eventos en tiempo real vía WebSockets y configuración Docker para despliegue.</li>
+          </ul>
+          <div class="panel-tags">
+            <span class="tech-pill">PHP 8.3</span>
+            <span class="tech-pill">Laravel 12/13</span>
+            <span class="tech-pill">Sanctum</span>
+            <span class="tech-pill">Laravel Reverb</span>
+            <span class="tech-pill">Spatie RBAC</span>
+            <span class="tech-pill">Google OAuth</span>
+            <span class="tech-pill">Wompi API</span>
+            <span class="tech-pill">Docker</span>
+          </div>
+        </div>
+        <div class="panel-preview" data-lightbox="./assets/img/fs_wompi.png" data-caption="Integración de Pasarela de Pagos Wompi Bancolombia — Tarjetas, Nequi, DaviPlata y Transferencias">
+          <img src="./assets/img/fs_wompi.png" alt="Integración Wompi Fashion Style" />
+          <div class="panel-preview-caption">Clic para ampliar · Checkout Integrado con Wompi Bancolombia</div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Mobile -->
+      <div class="tab-panel" id="tab-mobile">
+        <div class="panel-content">
+          <h3>Aplicación Móvil Android en Flutter 3 + Dart</h3>
+          <p>
+            Extensión móvil nativa en desarrollo conectada a la misma API REST en Laravel, permitiendo comprar desde el celular y operar módulos administrativos en movilidad.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Arquitectura Modular:</strong> Estado reactivo con Flutter Riverpod, navegación separada para cliente y administrador con GoRouter y cliente HTTP Dio.</li>
+            <li><strong>Checkout Móvil &amp; Deep Links:</strong> Flujo de compra integrado con Wompi, seguimiento de estado de pedidos y descarga de comprobantes.</li>
+            <li><strong>POS Móvil &amp; Recibo Térmico:</strong> Ventas desde dispositivo móvil y generación de recibos térmicos de 80mm en PDF.</li>
+            <li><strong>Gestión Operativa:</strong> Consulta de bitácoras, control de kárdex, gestión de prendas, órdenes de producción y compilación de instaladores APK.</li>
+          </ul>
+          <div class="panel-tags">
+            <span class="tech-pill">Dart 3</span>
+            <span class="tech-pill">Flutter 3</span>
+            <span class="tech-pill">Riverpod</span>
+            <span class="tech-pill">GoRouter</span>
+            <span class="tech-pill">Dio</span>
+            <span class="tech-pill">WebSockets</span>
+            <span class="tech-pill">PDF / Printing</span>
+            <span class="tech-pill">APK Android</span>
+          </div>
+        </div>
+        <div class="panel-preview" data-lightbox="./assets/img/fs_facturacion.png" data-caption="Facturación Automática Omnicanal — Trazabilidad unificada de ventas POS y pedidos online con descarga PDF">
+          <img src="./assets/img/fs_facturacion.png" alt="Facturación omnicanal Fashion Style" />
+          <div class="panel-preview-caption">Clic para ampliar · Facturación Omnicanal (Pedidos Online + Ventas POS)</div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Engineering -->
+      <div class="tab-panel" id="tab-engineering">
+        <div class="panel-content">
+          <h3>Modelado Relacional (38 Tablas) &amp; Documentación IEEE 830</h3>
+          <p>
+            Base de ingeniería de software que acompaña el desarrollo actual del proyecto: análisis de requerimientos, diseño relacional, pruebas de endpoints y trazabilidad.
+          </p>
+          <ul class="feature-list">
+            <li><strong>Esquema MySQL 8.0 InnoDB:</strong> 38 tablas normalizadas distribuidas en módulos de Usuarios/RBAC, Catálogo, Producción BOM, Inventario/Kárdex, E-Commerce, Facturación/Pagos y Auditoría.</li>
+            <li><strong>Especificación IEEE 830:</strong> Alcance documentado sobre 77 Requerimientos Funcionales (RF-001 a RF-077) con matriz de trazabilidad.</li>
+            <li><strong>Artefactos &amp; Pruebas API:</strong> Diagramas Entidad-Relación y UML en MySQL Workbench, colecciones de pruebas REST en Bruno y manuales del sistema.</li>
+            <li><strong>Trazabilidad &amp; Bitácoras:</strong> Auditoría de acciones administrativas y registro detallado de entradas/salidas en kárdex.</li>
+          </ul>
+          <div class="panel-tags">
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">MySQL 8.0</span>
+            <span class="tech-pill">MySQL Workbench</span>
+            <span class="tech-pill">IEEE 830</span>
+            <span class="tech-pill">UML / ER</span>
+            <span class="tech-pill">Bruno API</span>
+          </div>
+        </div>
+        <div class="panel-preview" data-lightbox="./assets/img/fs_bd.png" data-caption="Diagrama Entidad-Relación de Fashion Style — 38 tablas normalizadas en MySQL 8.0">
+          <img src="./assets/img/fs_bd.png" alt="Diagrama Entidad-Relación Fashion Style" />
+          <div class="panel-preview-caption">Clic para ampliar · Diagrama Entidad-Relación (38 Tablas MySQL)</div>
+        </div>
+      </div>
+
+      <!-- Screenshot Gallery -->
+      <div class="gallery-block">
+        <div class="gallery-title">
+          <span>Avances y Capturas Reales del Proyecto en Curso</span>
+          <span class="mono" style="font-size:0.78rem;color:var(--text-muted)">Haz clic en cualquier imagen para verla en pantalla completa</span>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card" data-lightbox="./assets/img/fs_landing.png" data-caption="Escaparate E-Commerce Fashion Style — Diseño editorial minimalista, búsqueda y navegación de colecciones">
+            <img src="./assets/img/fs_landing.png" alt="Landing Page Fashion Style" />
+            <div class="gallery-card-meta">
+              <strong>Tienda Virtual (Landing)</strong>
+              <span>Escaparate minimalista en Vue 3 + Tailwind</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-lightbox="./assets/img/fs_dashboard.png" data-caption="Panel Administrativo — Métricas en tiempo real, ventas mensuales POS/Web y exportación">
+            <img src="./assets/img/fs_dashboard.png" alt="Dashboard Administrativo" />
+            <div class="gallery-card-meta">
+              <strong>Dashboard Administrativo</strong>
+              <span>KPIs, Chart.js y reportes PDF/Excel</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-lightbox="./assets/img/fs_facturacion.png" data-caption="Pedidos Online y Facturación Automática — Consecutivo unificado POS + Web con visor PDF">
+            <img src="./assets/img/fs_facturacion.png" alt="Facturación Automática" />
+            <div class="gallery-card-meta">
+              <strong>Facturación Omnicanal</strong>
+              <span>Trazabilidad de pedidos y comprobantes PDF</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-lightbox="./assets/img/fs_kardex.png" data-caption="Historial Kárdex de Inventario — Control de entradas, salidas, reservas de stock y exportación">
+            <img src="./assets/img/fs_kardex.png" alt="Kárdex de Inventario" />
+            <div class="gallery-card-meta">
+              <strong>Inventario &amp; Kárdex</strong>
+              <span>Movimientos de almacén y alertas de stock</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-lightbox="./assets/img/fs_wompi.png" data-caption="Checkout con Wompi Bancolombia — Integración de tarjetas, Nequi, DaviPlata y QR">
+            <img src="./assets/img/fs_wompi.png" alt="Pasarela Wompi" />
+            <div class="gallery-card-meta">
+              <strong>Pasarela de Pagos Wompi</strong>
+              <span>Webhooks, PSE, Nequi y reserva de stock</span>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-lightbox="./assets/img/fs_bd.png" data-caption="Arquitectura de Datos — 38 tablas normalizadas en MySQL 8.0 InnoDB">
+            <img src="./assets/img/fs_bd.png" alt="Diseño Base de Datos" />
+            <div class="gallery-card-meta">
+              <strong>Base de Datos Relacional</strong>
+              <span>38 tablas normalizadas en MySQL 8.0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo-bar">
+          <a href="https://github.com/FashionStyleGrupo3/FashionStyleBackEnd" target="_blank" class="btn btn-secondary btn-sm">GitHub · Backend Laravel</a>
+          <a href="https://github.com/FashionStyleGrupo3/FashionStyleFrontEnd" target="_blank" class="btn btn-secondary btn-sm">GitHub · Frontend Vue 3</a>
+          <a href="https://github.com/FashionStyleGrupo3/app_movil_fashionstyle" target="_blank" class="btn btn-secondary btn-sm">GitHub · App Móvil Flutter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Lenguajes, Stack &amp; Habilidades</div>
+        <h2 class="section-title">Tecnologías que trabajo y tecnologías que he visto</h2>
+        <p class="section-desc">
+          Distingo con claridad los lenguajes y herramientas que utilizo de forma práctica en proyectos reales (como <strong>Fashion Style</strong>) de aquellos que ya vi y practiqué durante mi formación técnica y tecnológica.
+        </p>
+      </div>
+
+      <!-- Languages Overview Split -->
+      <div class="languages-split">
+        <div class="lang-panel lang-panel--worked">
+          <div class="lang-panel-head">
+            <h3>Lenguajes que he trabajado</h3>
+            <span class="skill-status skill-status--worked">● Uso práctico en proyectos</span>
+          </div>
+          <p class="lang-panel-desc">
+            Lenguajes con los que construyo lógica de negocio, interfaces web, aplicaciones móviles y bases de datos relacionales en proyectos reales:
+          </p>
+          <div class="lang-badges-wrap">
+            <span class="lang-chip lang-chip--worked">PHP 8.3</span>
+            <span class="lang-chip lang-chip--worked">JavaScript (ES6+)</span>
+            <span class="lang-chip lang-chip--worked">Dart 3</span>
+            <span class="lang-chip lang-chip--worked">SQL (MySQL · PostgreSQL)</span>
+            <span class="lang-chip lang-chip--worked">HTML5</span>
+            <span class="lang-chip lang-chip--worked">CSS3</span>
+          </div>
+        </div>
+
+        <div class="lang-panel lang-panel--seen">
+          <div class="lang-panel-head">
+            <h3>Lenguajes y frameworks vistos en formación</h3>
+            <span class="skill-status skill-status--seen">◌ Vistos · bases formativas</span>
+          </div>
+          <p class="lang-panel-desc">
+            Lenguajes y ecosistemas que he estudiado y practicado en ejercicios formativos, dándome bases sólidas para adaptarme rápido sin exagerar experiencia:
+          </p>
+          <div class="lang-badges-wrap">
+            <span class="lang-chip lang-chip--seen">Python</span>
+            <span class="lang-chip lang-chip--seen">Java</span>
+            <span class="lang-chip lang-chip--seen">TypeScript</span>
+            <span class="lang-chip lang-chip--seen">React</span>
+            <span class="lang-chip lang-chip--seen">Angular</span>
+            <span class="lang-chip lang-chip--seen">Svelte</span>
+            <span class="lang-chip lang-chip--seen">Spring Boot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="worked">Trabajados en Proyectos</button>
+        <button class="filter-btn" data-filter="seen">Vistos en Formación</button>
+        <button class="filter-btn" data-filter="languages">Lenguajes</button>
+        <button class="filter-btn" data-filter="frontend">Frontend &amp; Móvil</button>
+        <button class="filter-btn" data-filter="backend">Backend, Datos &amp; Entornos</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- TRABAJADOS -->
+        <article class="skill-card" data-category="worked languages backend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Lenguaje &amp; Backend</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>PHP 8.3 &amp; Laravel 12/13</h3>
+          <p>Desarrollo actual de la API REST de Fashion Style: controladores, servicios, migraciones, Sanctum, Spatie RBAC, Reverb (WebSockets) y gestión de CMS (WordPress, Joomla, Moodle).</p>
+        </article>
+
+        <article class="skill-card" data-category="worked languages frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Lenguajes Web</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>JavaScript (ES6+), HTML5 &amp; CSS3</h3>
+          <p>Lógica del cliente, manejo de eventos, consumo de APIs REST con Axios, estructura semántica accesible y diseño responsive con Flexbox, Grid y animaciones.</p>
+        </article>
+
+        <article class="skill-card" data-category="worked frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Frontend Principal</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>Vue.js 3, Vite &amp; Pinia</h3>
+          <p>Construcción de la tienda virtual, carrito y panel administrativo de Fashion Style con Composition API (<code>&lt;script setup&gt;</code>), Vue Router y composables reutilizables.</p>
+        </article>
+
+        <article class="skill-card" data-category="worked frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Estilos &amp; Analítica UI</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>Tailwind CSS, Bootstrap &amp; Chart.js</h3>
+          <p>Maquetación ágil con clases utilitarias y componentes responsivos, gráficas interactivas de ventas y generación de reportes/facturas en PDF y Excel.</p>
+        </article>
+
+        <article class="skill-card" data-category="worked languages frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Lenguaje &amp; App Móvil</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>Dart 3 &amp; Flutter 3</h3>
+          <p>Desarrollo en curso de la app móvil Android de Fashion Style conectada a la API REST usando Riverpod, GoRouter, Dio, recibos térmicos PDF y generación de APK.</p>
+        </article>
+
+        <article class="skill-card" data-category="worked languages backend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Lenguaje SQL &amp; Bases de Datos</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>SQL · MySQL 8.0 &amp; PostgreSQL</h3>
+          <p>Modelado relacional normalizado (38 tablas en Fashion Style), llaves foráneas, consultas con <code>JOIN</code>, transacciones y diseño visual en MySQL Workbench.</p>
+        </article>
+
+        <article class="skill-card" data-category="worked backend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Pagos &amp; Tiempo Real</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>Wompi API, OAuth 2.0 &amp; WebSockets</h3>
+          <p>Integración de pasarela de pagos Wompi (PSE, Nequi, tarjetas y webhooks), Google OAuth 2.0, reserva temporal de stock y actualización en vivo con Laravel Echo.</p>
+        </article>
+
+        <article class="skill-card" data-category="worked backend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Control de Versiones &amp; Entornos</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>Git, GitHub, Docker, WAMP &amp; XAMPP</h3>
+          <p>Trabajo colaborativo con ramas, merges y repositorios separados (Frontend, Backend y Móvil), servidores locales Apache/PHP/MySQL, contenedores y pruebas en Bruno.</p>
+        </article>
+
+        <article class="skill-card" data-category="worked backend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Ingeniería &amp; Ofimática</div>
+            <span class="skill-status skill-status--worked">● Trabajado</span>
+          </div>
+          <h3>IEEE 830, UML &amp; Excel (Certificado MOS)</h3>
+          <p>Especificación de requerimientos funcionales, diagramas de clases y ER, trazabilidad documental y manejo certificado de Microsoft Excel 2019 Associate.</p>
+        </article>
+
+        <!-- VISTOS EN FORMACIÓN -->
+        <article class="skill-card skill-card--seen" data-category="seen languages frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Lenguaje Tipado</div>
+            <span class="skill-status skill-status--seen">◌ Visto en formación</span>
+          </div>
+          <h3>TypeScript</h3>
+          <p>Superconjunto tipado de JavaScript visto en formación para definir interfaces de datos, tipar respuestas de APIs y prevenir errores antes de tiempo de ejecución.</p>
+        </article>
+
+        <article class="skill-card skill-card--seen" data-category="seen languages backend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Lenguaje Multipropósito</div>
+            <span class="skill-status skill-status--seen">◌ Visto en formación</span>
+          </div>
+          <h3>Python</h3>
+          <p>Fundamentos del lenguaje aplicados a lógica algorítmica, scripts de automatización, lectura/procesamiento de datos y exploración de inteligencia artificial.</p>
+        </article>
+
+        <article class="skill-card skill-card--seen" data-category="seen languages backend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Lenguaje POO &amp; Backend</div>
+            <span class="skill-status skill-status--seen">◌ Visto en formación</span>
+          </div>
+          <h3>Java &amp; Spring Boot</h3>
+          <p>Bases de programación orientada a objetos (clases, constructores, encapsulamiento) y acercamiento a la creación de controladores y servicios REST con Spring Boot.</p>
+        </article>
+
+        <article class="skill-card skill-card--seen" data-category="seen frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Librería UI</div>
+            <span class="skill-status skill-status--seen">◌ Visto en formación</span>
+          </div>
+          <h3>React</h3>
+          <p>Prácticas formativas construyendo interfaces basadas en componentes funcionales, manejo de estado local y efectos con hooks (<code>useState</code>, <code>useEffect</code>).</p>
+        </article>
+
+        <article class="skill-card skill-card--seen" data-category="seen frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Framework Frontend</div>
+            <span class="skill-status skill-status--seen">◌ Visto en formación</span>
+          </div>
+          <h3>Angular</h3>
+          <p>Acercamiento práctico a su arquitectura estructurada con TypeScript, componentes, inyección de dependencias y consumo de servicios REST.</p>
+        </article>
+
+        <article class="skill-card skill-card--seen" data-category="seen frontend">
+          <div class="skill-head-row">
+            <div class="skill-cat">Framework Compilado</div>
+            <span class="skill-status skill-status--seen">◌ Visto en formación</span>
+          </div>
+          <h3>Svelte</h3>
+          <p>Exploración formativa de componentes reactivos compilados a JavaScript puro con sintaxis declarativa ligera y estado reactivo directo.</p>
+        </article>
+      </div>
+
+      <div class="versatility-banner">
+        <div>
+          <h3>Honestidad técnica y rápida curva de aprendizaje</h3>
+          <p>
+            Mi foco práctico actual está en <strong>PHP (Laravel), JavaScript (Vue 3), Dart (Flutter) y SQL (MySQL / PostgreSQL)</strong> construyendo <strong>Fashion Style</strong>; al mismo tiempo, haber visto lenguajes como <strong>Python, Java y TypeScript</strong> junto a frameworks como <strong>React, Angular, Svelte y Spring Boot</strong> me permite comprender distintas arquitecturas y adaptarme con agilidad al stack de tu equipo.
+          </p>
+        </div>
+        <a href="#contacto" class="btn btn-primary btn-sm">Hablemos de tu equipo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section id="formacion" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Trayectoria Académica</div>
+        <h2 class="section-title">Formación &amp; Certificaciones</h2>
+        <p class="section-desc">
+          Formación técnica y tecnológica enfocada en ingeniería de software, respaldada por certificaciones oficiales del SENA y Microsoft.
+        </p>
+      </div>
+
+      <div class="edu-grid">
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;margin-bottom:14px;font-size:1.15rem;">Estudios Formales y Títulos</h3>
+          <div class="timeline">
+            <div class="timeline-card">
+              <div class="timeline-date">Abr 2025 – Jul 2027 · En formación activa</div>
+              <h3>Tecnólogo en Análisis y Desarrollo de Software (ADSO)</h3>
+              <div class="inst">SENA — Centro Industrial del Diseño y la Manufactura</div>
+              <div class="meta">Floridablanca, Santander · Modalidad Presencial · Ficha 3169034</div>
+              <div style="margin-top:10px">
+                <button type="button" class="btn btn-secondary btn-sm" data-lightbox="./assets/certificados/constancia_tecnologo_adso_sena.jpg" data-caption="Constancia Oficial de Estudios — Tecnólogo en Análisis y Desarrollo de Software (SENA CIDM)">Ver Constancia</button>
+              </div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-date">12 Noviembre 2024 · Titulado</div>
+              <h3>Título: Técnico en Programación de Software</h3>
+              <div class="inst">SENA — Centro Industrial de Mantenimiento Integral</div>
+              <div class="meta">Girón, Santander · Registro N.° 89917211</div>
+              <div style="margin-top:10px">
+                <button type="button" class="btn btn-secondary btn-sm" data-lightbox="./assets/certificados/titulo_tecnico_programacion_software_sena.jpg" data-caption="Título Oficial SENA — Técnico en Programación de Software (Noviembre 2024)">Ver Título</button>
+              </div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-date">2024 · Graduado</div>
+              <h3>Título: Bachiller Académico</h3>
+              <div class="inst">Institución Educativa Colegio Facundo Navas Mantilla</div>
+              <div class="meta">Girón, Santander</div>
+              <div style="margin-top:10px">
+                <button type="button" class="btn btn-secondary btn-sm" data-lightbox="./assets/certificados/certificado_educacion_basica_colegio.jpg" data-caption="Certificado Institucional — Colegio Facundo Navas Mantilla (Girón, Santander)">Ver Soporte</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-family:'Space Grotesk',sans-serif;margin-bottom:14px;font-size:1.15rem;">Certificaciones Verificadas</h3>
+          <div class="certs-list">
+            <div class="cert-card" style="cursor:pointer" data-lightbox="./assets/certificados/certificado_microsoft_excel_2019.jpg" data-caption="Certificación Internacional Microsoft Office Specialist: Excel 2019 Associate (Código 77zK-uSRY)">
+              <div>
+                <strong>Microsoft Office Specialist: Excel 2019 Associate</strong>
+                <span>Microsoft · Certificación Internacional · Clic para ver certificado</span>
+              </div>
+              <span class="cert-year">Nov 2023</span>
+            </div>
+
+            <div class="cert-card" style="cursor:pointer" data-lightbox="./assets/certificados/certificado_english_does_work_1_sena.jpg" data-caption="Certificado SENA — English Does Work Level 1 (48 horas · Octubre 2023)">
+              <div>
+                <strong>English Does Work — Level 1</strong>
+                <span>SENA · 48 horas · Clic para ver certificado</span>
+              </div>
+              <span class="cert-year">Oct 2023</span>
+            </div>
+
+            <div class="cert-card" style="cursor:pointer" data-lightbox="./assets/certificados/certificado_sistemas_informacion_sena.jpg" data-caption="Certificado SENA — Diseño y Desarrollo de Sistemas de Información (144 horas)">
+              <div>
+                <strong>Diseño y Desarrollo de Sistemas de Información</strong>
+                <span>SENA · 144 horas · Clic para ver certificado</span>
+              </div>
+              <span class="cert-year">Sep 2021</span>
+            </div>
+
+            <div class="cert-card" style="cursor:pointer" data-lightbox="./assets/certificados/certificado_electronica_robotica_sena.jpg" data-caption="Certificado SENA — Aplicación de la Electrónica y Robótica en Proyectos de CTI (144 horas)">
+              <div>
+                <strong>Electrónica y Robótica en Proyectos de CTI</strong>
+                <span>SENA · 144 horas · Clic para ver certificado</span>
+              </div>
+              <span class="cert-year">Dic 2021</span>
+            </div>
+
+            <div class="cert-card" style="cursor:pointer" data-lightbox="./assets/certificados/certificado_procesos_biotecnologicos_sena.jpg" data-caption="Certificado SENA — Aplicaciones y Desarrollo de Procesos Biotecnológicos (144 horas)">
+              <div>
+                <strong>Aplicaciones y Desarrollo de Procesos Biotecnológicos</strong>
+                <span>SENA · 144 horas · Clic para ver certificado</span>
+              </div>
+              <span class="cert-year">Ago 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <div>
+          <div class="section-kicker">Contacto Directo</div>
+          <h2>¿Buscas un Desarrollador Full-Stack con ganas de construir en grande?</h2>
+          <p>
+            Abierto a colaborar en proyectos de software, desarrollo web, aplicaciones móviles y equipos de tecnología (en Bucaramanga / Área Metropolitana o remoto). Puedes revisar mi hoja de vida o escribirme directamente.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;">
+            <a href="https://wa.me/573232242435?text=Hola%20Edwin%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Enviar un mensaje</a>
+            <a href="./assets/Hoja_de_Vida_Edwin_David_Arguello_Martinez.pdf" target="_blank" class="btn btn-secondary">Ver Hoja de Vida (PDF)</a>
+            <a href="./assets/Hoja_de_Vida_Edwin_David_Arguello_Martinez.docx" download class="btn btn-secondary">Descargar Hoja de Vida (.docx)</a>
+          </div>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-item">
+            <div>
+              <small>Correo Electrónico</small>
+              <strong>edwindavidarguellomartinez@gmail.com</strong>
+            </div>
+            <div style="display:flex;gap:6px;flex-shrink:0;">
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=edwindavidarguellomartinez@gmail.com&amp;su=Contacto%20desde%20tu%20Portafolio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Gmail</a>
+              <button id="copyEmailContact" class="btn btn-secondary btn-sm" type="button">Copiar</button>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <small>Teléfono / WhatsApp</small>
+              <strong>+57 323 224 2435</strong>
+            </div>
+            <a href="https://wa.me/573232242435?text=Hola%20Edwin%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Enviar mensaje</a>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <small>GitHub Personal</small>
+              <strong>github.com/tzun95168-star</strong>
+            </div>
+            <a href="https://github.com/tzun95168-star" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Abrir</a>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <small>Ubicación</small>
+              <strong>Bucaramanga / Girón, Santander, Colombia</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Edwin David Argüello Martínez · Desarrollador Full-Stack · Construido con HTML5, CSS3 y JavaScript.
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imagen">
+    <div class="lightbox-inner">
+      <button id="lightboxClose" class="lightbox-close" aria-label="Cerrar">&times;</button>
+      <button id="lightboxPrev" class="lightbox-nav lightbox-prev" aria-label="Anterior">&#8249;</button>
+      <img id="lightboxImg" src="" alt="Vista ampliada" />
+      <button id="lightboxNext" class="lightbox-nav lightbox-next" aria-label="Siguiente">&#8250;</button>
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Correo copiado al portapapeles</div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
