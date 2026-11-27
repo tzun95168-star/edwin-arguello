@@ -28,6 +28,37 @@
     applyTheme(next);
   });
 
+  // 1b. Mobile Navigation Menu
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const navLinks = document.getElementById('navLinks');
+  const iconMenuOpen = document.getElementById('iconMenuOpen');
+  const iconMenuClose = document.getElementById('iconMenuClose');
+
+  function setMobileMenu(open) {
+    if (!navLinks || !mobileMenuBtn) return;
+    navLinks.classList.toggle('open', open);
+    mobileMenuBtn.setAttribute('aria-expanded', String(open));
+    if (iconMenuOpen) iconMenuOpen.style.display = open ? 'none' : 'block';
+    if (iconMenuClose) iconMenuClose.style.display = open ? 'block' : 'none';
+  }
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    const isOpen = navLinks?.classList.contains('open');
+    setMobileMenu(!isOpen);
+  });
+
+  navLinks?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setMobileMenu(false));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (navLinks?.classList.contains('open')) {
+      if (!navLinks.contains(e.target) && !mobileMenuBtn?.contains(e.target)) {
+        setMobileMenu(false);
+      }
+    }
+  });
+
   // 2. Project Architecture Tabs
   const tabBtns = document.querySelectorAll('.tab-btn');
   const tabPanels = document.querySelectorAll('.tab-panel');
@@ -147,11 +178,30 @@
   });
 
   document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks?.classList.contains('open')) {
+      setMobileMenu(false);
+    }
     if (!lightbox.classList.contains('open')) return;
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowLeft') stepLightbox(-1);
     if (e.key === 'ArrowRight') stepLightbox(1);
   });
+
+  // Touch swipe left/right inside Lightbox for mobile
+  let touchStartX = 0;
+  lightbox?.addEventListener('touchstart', (e) => {
+    if (e.changedTouches?.length) {
+      touchStartX = e.changedTouches[0].clientX;
+    }
+  }, { passive: true });
+
+  lightbox?.addEventListener('touchend', (e) => {
+    if (!lightbox.classList.contains('open') || !e.changedTouches?.length) return;
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 45) {
+      stepLightbox(dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
 
   // 5. Copy Email + Toast
   const toast = document.getElementById('toast');
