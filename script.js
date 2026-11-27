@@ -63,28 +63,62 @@
     });
   });
 
-  // 4. Lightbox Gallery
+  // 4. Lightbox Gallery (deduplicated + resilient loader)
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxLoader = document.getElementById('lightboxLoader');
   const lightboxCaption = document.getElementById('lightboxCaption');
   const lightboxClose = document.getElementById('lightboxClose');
   const lightboxPrev = document.getElementById('lightboxPrev');
   const lightboxNext = document.getElementById('lightboxNext');
 
-  const galleryItems = Array.from(document.querySelectorAll('[data-lightbox]')).map((el) => ({
-    src: el.dataset.lightbox,
-    caption: el.dataset.caption || ''
-  }));
+  const seenSrcs = new Set();
+  const galleryItems = [];
+  document.querySelectorAll('[data-lightbox]').forEach((el) => {
+    const src = el.dataset.lightbox;
+    if (src && !seenSrcs.has(src)) {
+      seenSrcs.add(src);
+      galleryItems.push({
+        src,
+        caption: el.dataset.caption || ''
+      });
+    }
+  });
 
   let currentIndex = 0;
 
+  function loadIntoLightbox(src, caption) {
+    lightboxCaption.textContent = caption;
+    lightboxImg.classList.add('is-loading');
+    lightboxLoader?.classList.add('active');
+
+    let retried = false;
+    lightboxImg.onload = () => {
+      lightboxLoader?.classList.remove('active');
+      lightboxImg.classList.remove('is-loading');
+    };
+    lightboxImg.onerror = () => {
+      if (!retried) {
+        retried = true;
+        const sep = src.includes('?') ? '&' : '?';
+        lightboxImg.src = src + sep + 't=' + Date.now();
+      } else {
+        lightboxLoader.textContent = 'No se pudo cargar la imagen. Recarga la página e intenta de nuevo.';
+      }
+    };
+
+    // Reset first so Chromium always re-triggers load even if previously interrupted
+    lightboxImg.removeAttribute('src');
+    lightboxImg.src = src;
+  }
+
   function openLightbox(src, caption) {
+    if (lightboxLoader) lightboxLoader.textContent = 'Cargando documento...';
     const found = galleryItems.findIndex((item) => item.src === src);
     currentIndex = found >= 0 ? found : 0;
-    lightboxImg.src = src;
-    lightboxCaption.textContent = caption;
     lightbox.classList.add('open');
     document.body.style.overflow = 'hidden';
+    loadIntoLightbox(src, caption);
   }
 
   function closeLightbox() {
@@ -95,8 +129,7 @@
   function stepLightbox(delta) {
     if (!galleryItems.length) return;
     currentIndex = (currentIndex + delta + galleryItems.length) % galleryItems.length;
-    lightboxImg.src = galleryItems[currentIndex].src;
-    lightboxCaption.textContent = galleryItems[currentIndex].caption;
+    loadIntoLightbox(galleryItems[currentIndex].src, galleryItems[currentIndex].caption);
   }
 
   document.querySelectorAll('[data-lightbox]').forEach((el) => {

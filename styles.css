@@ -944,6 +944,32 @@ img {
   margin-top: 4px;
 }
 
+.timeline-card-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.doc-thumb {
+  width: 66px;
+  height: 86px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  flex-shrink: 0;
+  cursor: zoom-in;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.doc-thumb:hover,
+.cert-card:hover .cert-thumb {
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+
 .certs-list {
   display: flex;
   flex-direction: column;
@@ -954,11 +980,35 @@ img {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 15px 18px;
+  padding: 13px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.cert-card-left {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.cert-thumb {
+  width: 54px;
+  height: 44px;
+  border-radius: 6px;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .cert-card strong {
@@ -1069,11 +1119,32 @@ img {
 }
 
 .lightbox-inner img {
-  max-height: 78vh;
+  max-height: 80vh;
+  max-width: min(88vw, 960px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
   margin: 0 auto;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+}
+
+.lightbox-inner img.is-loading {
+  display: none;
+}
+
+.lightbox-loader {
+  display: none;
+  margin: 40px auto;
+  color: #cbd5e1;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+}
+
+.lightbox-loader.active {
+  display: block;
 }
 
 .lightbox-caption {
